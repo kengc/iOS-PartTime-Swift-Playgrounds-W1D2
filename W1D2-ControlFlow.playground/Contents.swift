@@ -84,11 +84,16 @@ if bicycleCount > 1 {
 var inputString = "Do you like bicycles?"
 
 if inputString.hasSuffix("?"){
-    print("You don't say!")
+     print("I think so!")
+} else {
+     print("You don't say!")
 }
 
 
-
+//alternativly can use ternary operation
+print(inputString.hasSuffix("?") ? "I think so!" :
+    "You don't say!e"
+)
 
 
 //: THE END
