@@ -75,6 +75,11 @@ if bicycleCount > 1 {
 }
 
 
+//alternativly can use ternary operation
+print(bicycleCount > 1 ? "There are \(bicycleCount) bicycles" :
+    (bicycleCount < 1) ? "There are \(bicycleCount) bicycles" : "There is \(bicycleCount) bicycle"
+)
+
 
 
 //: ### Bonus Challenge
