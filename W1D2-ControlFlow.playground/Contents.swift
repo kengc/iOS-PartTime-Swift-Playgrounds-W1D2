@@ -49,8 +49,16 @@ if someThing == otherThing {
 
 bicycleCount = 1
 
+if bicycleCount > 1 {
+    print("There are \(bicycleCount) bicycles")
+} else {
+    print("There is \(bicycleCount) bicycle")
+}
 
-
+//alternativly can use ternary operation
+print(bicycleCount > 1 ? "There are \(bicycleCount) bicycles" :
+    "There is \(bicycleCount) bicycle"
+)
 
 //: ### Challenge 2
 //:
@@ -58,6 +66,13 @@ bicycleCount = 1
 
 bicycleCount = 0
 
+if bicycleCount > 1 {
+    print("There are \(bicycleCount) bicycles")
+} else if bicycleCount < 1 {
+    print("There are \(bicycleCount) bicycles")
+} else {
+    print("There is \(bicycleCount) bicycle")
+}
 
 
 
@@ -68,7 +83,9 @@ bicycleCount = 0
 
 var inputString = "Do you like bicycles?"
 
-
+if inputString.hasSuffix("?"){
+    print("You don't say!")
+}
 
 
 
